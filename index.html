@@ -1,11 +1,122 @@
-<pre>
-# Privacy Statement
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - EasyWeather</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: #333; }
+        h2 { margin-top: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+        a { color: #006d77; }
+        strong { font-weight: bold; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+        .contact { margin-top: 2em; }
+        .date { font-style: italic; color: #666; }
+    </style>
+</head>
+<body>
 
-This app respects your privacy. Here's what you need to know:
+    <h1>Privacy Policy for EasyWeather</h1>
 
-- **Location Data:** We use your location (obtained either via your IP address for an initial estimate or directly from your device's GPS if you grant permission) solely to fetch relevant weather forecasts from the Open-Meteo API and display location names via the Nominatim API. Your precise location is processed to get weather data but is not stored long-term on any server controlled by us after the forecast is retrieved.
-- **Local Storage:** Your last searched/selected location and app settings (like theme and units) are stored _only_ on your device using MMKV storage. This data is not transmitted elsewhere.
-- **No Personal Information:** We do not collect, store, or share any other personally identifiable information (like name, email, contacts).
-- **Third-Party Services:** The app uses third-party services for weather (Open-Meteo), location search (Nominatim/OpenStreetMap), and IP-based geolocation (ip-api.com, ipify.org). Please refer to their respective privacy policies for how they handle data.
-- **Analytics:** No user analytics are currently collected.
-</pre>
+    <p class="date">Effective Date: [Insert Today's Date, e.g., October 26, 2023]</p>
+
+    <p>This Privacy Policy describes how EasyWeather ("we," "us," or "our") collects, uses, and shares information when you use our mobile application (the "App").</p>
+
+    <h2>1. Information We Collect</h2>
+
+    <p>We collect the following types of information:</p>
+
+    <ul>
+        <li>
+            <strong>Location Data:</strong>
+            <ul>
+                <li><strong>Approximate Location (IP-based):</strong> When you first open the App or if precise location is unavailable/denied, we may infer your approximate location based on your IP address using third-party services (like ip-api.com, ipify.org). This is used solely to provide an initial relevant weather forecast.</li>
+                <li><strong>Precise Location (GPS-based):</strong> If you grant the App permission, we will collect your device's precise GPS location. This allows us to provide the most accurate weather forecast for your current location. You can revoke this permission at any time through your device settings.</li>
+            </ul>
+            <em>We send your coordinates (approximate or precise latitude and longitude) to our weather data provider (Open-Meteo) to fetch forecasts. We do not store your precise location history on our servers.</em>
+        </li>
+        <li>
+            <strong>Search Queries:</strong> When you search for a location, the query text is sent to a third-party geocoding service (Nominatim/OpenStreetMap) to find matching locations and their coordinates.
+        </li>
+        <li>
+            <strong>Locally Stored Data (On Your Device Only):</strong>
+            <ul>
+                <li><strong>Last Location:</strong> We store your last searched/selected location (display name, latitude, longitude) on your device using MMKV storage for your convenience, so the App remembers it next time you open it.</li>
+                <li><strong>App Settings:</strong> Your preferences for theme (light/dark/system) and units (Metric/Imperial) are stored locally on your device using MMKV storage.</li>
+            </ul>
+            <em>This locally stored data is not transmitted to us or any third party.</em>
+        </li>
+        <li>
+            <strong>Analytics Information (Optional - Via Third-Party SDKs like Firebase Analytics):</strong>
+            <ul>
+                <li><strong>Usage Data:</strong> Information about how you interact with the App, such as screens viewed, features used (e.g., location search, settings changes), session duration, and button taps.</li>
+                <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers (like Advertising ID, if available and permitted by platform policies), IP address (may be used for coarse location estimate by the SDK), app version, and carrier.</li>
+                <li><strong>Crash and Performance Data:</strong> If the App crashes or experiences performance issues, diagnostic information may be collected to help us identify and fix bugs (e.g., via Firebase Crashlytics, Sentry). This may include device state, app state at the time of the crash, and stack traces.</li>
+            </ul>
+        </li>
+         <li>
+            <strong>Advertising Information (Optional - Via Third-Party SDKs like Google AdMob):</strong>
+             <ul>
+                 <li><strong>Device Identifiers:</strong> Advertising ID (IDFA/AAID) to serve personalized ads (subject to your device settings) and measure ad performance.</li>
+                 <li><strong>IP Address:</strong> May be used by the ad network for coarse location targeting and fraud prevention.</li>
+                 <li><strong>Ad Interaction Data:</strong> Information about the ads shown to you and your interactions with them (e.g., clicks, views).</li>
+             </ul>
+         </li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+        <li>To provide you with accurate and relevant weather forecasts based on your current or selected location.</li>
+        <li>To enable location searching functionality.</li>
+        <li>To remember your preferences (last location, theme, units) for a better user experience.</li>
+        <li><strong>(If Analytics Integrated):</strong> To understand how users interact with the App, identify popular features, diagnose crashes, monitor performance, and improve the App's functionality and user experience.</li>
+        <li><strong>(If Ads Integrated):</strong> To display advertisements within the App, which helps support its development and maintenance. Ads may be personalized based on identifiers and usage data, subject to platform policies and your device settings.</li>
+        <li>To comply with legal obligations.</li>
+    </ul>
+
+    <h2>3. How We Share Your Information</h2>
+
+    <p>We may share your information with the following third parties only as necessary to provide the App's functionality or as described below:</p>
+    <ul>
+        <li><strong>Weather Data Provider (Open-Meteo):</strong> We share latitude and longitude coordinates to retrieve weather forecasts. See Open-Meteo's Privacy Policy: <a href="https://open-meteo.com/en/privacy" target="_blank">[Link to Open-Meteo Policy]</a></li>
+        <li><strong>Location Search Provider (Nominatim/OpenStreetMap):</strong> We share your search query to find locations. Nominatim usage is subject to OpenStreetMap Foundation's policies. See Nominatim's Usage Policy: <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank">[Link to Nominatim Policy]</a></li>
+        <li><strong>IP Geolocation Services (ip-api.com, ipify.org):</strong> Your IP address is sent to these services to determine approximate location. See their respective policies: <a href="https://ip-api.com/docs/legal" target="_blank">[Link to ip-api Policy]</a>, <a href="https://www.ipify.org/privacy/" target="_blank">[Link to ipify Policy]</a></li>
+        <li><strong>(If Analytics Integrated) Analytics Providers (e.g., Google Firebase):</strong> We may share usage data, device information, and crash reports as described in Section 1. Google's use of data is governed by their policies. See: <a href="https://policies.google.com/privacy" target="_blank">[Link to Google Privacy Policy]</a>, <a href="https://firebase.google.com/support/privacy" target="_blank">[Link to Firebase Privacy]</a></li>
+        <li><strong>(If Ads Integrated) Advertising Partners (e.g., Google AdMob):</strong> We may share device identifiers, IP address, and ad interaction data. See: <a href="https://policies.google.com/privacy" target="_blank">[Link to Google Privacy Policy]</a>, <a href="https://support.google.com/admob/answer/6128543" target="_blank">[Link to AdMob Data Usage Info]</a></li>
+        <li><strong>Legal Requirements:</strong> We may disclose information if required by law, subpoena, or other legal process, or if we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.</li>
+    </ul>
+     <p>We do not sell your personal information.</p>
+
+    <h2>4. Data Storage and Security</h2>
+
+    <p>Location and settings data are stored locally on your device using MMKV storage. Data sent to third-party services is handled according to their respective privacy policies and security measures.</p>
+    <p>We implement reasonable administrative, technical, and physical security measures to protect your information from unauthorized access, disclosure, alteration, or destruction. However, no internet or electronic transmission is completely secure, so we cannot guarantee absolute security.</p>
+
+    <h2>5. Your Choices and Rights</h2>
+
+    <ul>
+        <li><strong>Location Permissions:</strong> You can enable or disable location services for the App at any time through your device settings. If disabled, weather will be based on your last selected location or IP address.</li>
+        <li><strong>App Settings:</strong> You can change your theme and unit preferences directly within the App's settings screen.</li>
+        <li><strong>Personalized Advertising:</strong> You may be able to limit ad tracking or opt-out of personalized advertising using the settings on your mobile device (e.g., "Limit Ad Tracking" on iOS or "Opt out of Ads Personalization" on Android). This will not stop ads from being shown, but they may be less relevant.</li>
+        <li><strong>Accessing or Deleting Local Data:</strong> Locally stored settings and last location can be effectively cleared by uninstalling the App or clearing the App's data through your device settings.</li>
+         <li><strong>Third-Party Data:</strong> For information collected by third-party services (Analytics, Ads), please refer to their respective privacy policies (linked above) for information on accessing or managing that data.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+
+    <p>The App is not intended for use by children under the age of 13 (or the relevant age in your jurisdiction). We do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will take steps to delete such information as soon as possible.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App or on our website and updating the "Effective Date" at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+    <h2>8. Contact Us</h2>
+
+    <p class="contact">If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:antar.muhammed1@gmail.com">antar.muhammed1@gmail.com</a></p>
+
+</body>
+</html>
