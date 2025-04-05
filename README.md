@@ -7,3 +7,5 @@ This app respects your privacy. Here's what you need to know:
 - **No Personal Information:** We do not collect, store, or share any other personally identifiable information (like name, email, contacts).
 - **Third-Party Services:** The app uses third-party services for weather (Open-Meteo), location search (Nominatim/OpenStreetMap), and IP-based geolocation (ip-api.com, ipify.org). Please refer to their respective privacy policies for how they handle data.
 - **Analytics:** No user analytics are currently collected.
+
+- **Check out** (https://uwayss.github.io/weather-app-privacy-statement/) to see the full privacy policy
